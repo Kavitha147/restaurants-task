@@ -1,5 +1,4 @@
 import React from "react";
-// import hotels from "./data";
 import { ImSearch } from "react-icons/im";
 import Switch from "react-switch";
 
@@ -15,6 +14,7 @@ import getHotels from "./getHotels";
 
 import "./style.css";
 
+/** Inline Styles for the Card Details */
 const styles = (muiBaseTheme) => ({
   card: {
     width: 300,
@@ -47,6 +47,7 @@ const styles = (muiBaseTheme) => ({
   },
 });
 
+/** Common sort functions */
 const sortTypes = {
   up: {
     class: "up",
@@ -73,14 +74,17 @@ class DisplayHotles extends React.Component {
     };
   }
 
+  /** handles the check and uncheck for category */
   handleChange = (checked) => {
     this.setState({ checked });
   };
 
+  /** handles the search for the Hotel Name */
   handleSearch = (e) => {
     this.setState({ searchString: e.target.value });
   };
 
+  /** handles sorting functions for the rating */
   onSortChange = () => {
     const { currentSort } = this.state;
     let nextSort;
@@ -94,6 +98,7 @@ class DisplayHotles extends React.Component {
     });
   };
 
+  /** get the hotesl list form the database */
   async componentDidMount() {
     const result = await getHotels();
     this.setState({

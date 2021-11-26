@@ -5,6 +5,7 @@ const port = 5000;
 
 const whitelist = "http://localhost:3000";
 
+/** Used for thr CROS origin erros */
 app.use(express.json());
 const corsOptions = {
   origin: (origin, callback) => {
@@ -24,10 +25,11 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
+/** Used for thr get Hostels list API */
 app.get("/getHotels", (req, res) => {
   const mysql = require("mysql");
   const conn = mysql.createConnection({
-    host: "192.168.30.20",
+    host: "localhost",
     user: "root",
     password: "",
     database: "test",
