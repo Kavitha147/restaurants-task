@@ -37,12 +37,11 @@ app.get("/getHotels", (req, res) => {
     if (err) throw err;
     conn.query("SELECT * FROM restaurants", function (err, result, fields) {
       if (err) throw err;
-      console.log(result);
       res.json({ "message": "ok", list: result });
     });
   });
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+  console.log(`Server listening at http://localhost:${port}`);
 });

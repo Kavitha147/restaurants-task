@@ -1,0 +1,100 @@
+.input-icon {
+  color: orangered;
+  font-size: 20px;
+  position: absolute;
+  top: 97px;
+  left: 85px;
+}
+
+input[type="text"] {
+  padding: 4px 40px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 3px solid orangered;
+  box-sizing: border-box;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.DisplayHotles-card {
+  margin: 0px;
+}
+
+.filterList {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.checkbox,
+.serach-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.checkbox span {
+  margin-right: 10px;
+}
+
+.serach-list .input-icon {
+  margin-right: 3px;
+}
+
+.sort {
+  cursor: pointer;
+}
+
+.MuiCardMedia-img {
+  height: 200px;
+}
+
+.MuiTypography-caption,
+.subheading {
+  text-transform: capitalize;
+  font-size: 20px;
+  color: rgb(6, 6, 92);
+}
+
+h1 {
+  text-align: center;
+}
+
+.heading-text {
+  font-family: "Times New Roman", Times, serif;
+  background: -webkit-linear-gradient(rgb(248, 64, 64), rgb(248, 181, 55));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* / color: rgb(228, 72, 72); / */
+  /* / font-weight: 500; / */
+  font-size: 55px;
+}
+.sub-head {
+  font-family: "Times New Roman", Times, serif;
+  background: -webkit-linear-gradient(rgb(248, 64, 64), rgb(248, 181, 55));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 35px;
+}
+.MuiTypography--heading {
+  color: orangered;
+}
+.sort-icon {
+  color: orangered;
+  font-size: 30px;
+}
+.rating {
+  font-size: 23px;
+  color: rgb(163, 6, 129);
+  font-weight: 500;
+}
