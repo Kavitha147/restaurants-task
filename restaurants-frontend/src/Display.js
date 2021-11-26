@@ -170,9 +170,7 @@ class DisplayHotles extends React.Component {
                   <CardMedia
                     component="img"
                     className={this.props.classes.media}
-                    image={
-                      "https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia.istockphoto.com%2Fphotos%2Fdowntown-cleveland-hotel-entrance-and-waiting-taxi-cab-picture-id472899538%3Fb%3D1%26k%3D20%26m%3D472899538%26s%3D170667a%26w%3D0%26h%3DoGDM26vWKgcKA3ARp2da-H4St2dMEhJg23TTBeJgPDE%3D&imgrefurl=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fhotel&tbnid=JHJpzVwWW0xL5M&vet=12ahUKEwiOk9u0t7T0AhVpm0sFHTQ-BXEQMygAegUIARDNAQ..i&docid=iMEQ4vPywWmruM&w=509&h=339&itg=1&q=hotel%20images&ved=2ahUKEwiOk9u0t7T0AhVpm0sFHTQ-BXEQMygAegUIARDNAQ"
-                    }
+                    image={d.imagePath}                    }
                     alt={"No Images Found"}
                   />
                 </div>
